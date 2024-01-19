@@ -4,13 +4,8 @@ const cors = require("cors");
 const port = process.env.PORT || 5000;
 require("dotenv").config({ path: "./config.env" });
 
-/*if(process.env.NODE_ENV !== "production"){
-  require("dotenv").config({ path: "./config.env" });
-}*/
-
 const corsOptions ={
-  //origin:"https://rayan-dahmena.fr",
-  origin: "http://localhost:4200",
+  origin:"https://rayan-dahmena.fr",
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }

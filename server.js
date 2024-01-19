@@ -30,7 +30,7 @@ const server = app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
 
-
+/*
 const io = require('socket.io')(server, {
   cors:{
     origin: "https://rayan-dahmena.fr",
@@ -155,3 +155,4 @@ io.on("connection", (socket) => {
     //console.log("disconnection");
   });
 })
+*/

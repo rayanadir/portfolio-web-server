@@ -59,7 +59,7 @@ router.post("/api/checkConversation", auth,conversationController.checkIsValidCo
 router.post("/api/simpleMessage", messageController.sendSimpleMessage)
 
 // get all simple messages
-router.get("/api/messages", admin, messageController.getAllSimpleMessages)
+router.post("/api/messages", admin, messageController.getAllSimpleMessages)
 
 // get simple message
 router.post("/api/message", admin, messageController.getSimpleMessage)
